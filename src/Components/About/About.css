@@ -1,0 +1,184 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin: 80px 170px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .about.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .about-title {
+    position: relative;
+    text-align: center;
+  }
+  
+  .about-title h1 {
+    font-size: 70px;
+    font-weight: 600;
+  }
+  
+  .about-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+  
+  .about-section {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+  
+  .about-left img {
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .about-para {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  
+  .about-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .about-skill {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    transition: 0.3s;
+  }
+  
+  .about-skill p {
+    min-width: 150px;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  
+  .about-skill hr {
+    width: var(--skill-level, 50%);
+    height: 8px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #DA7C25 -5.09%, #B923E1 106.28%);
+  }
+  
+  .about-achievements {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .about-achievement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: 0.5s;
+  }
+  
+  .about-achievement h1 {
+    font-size: 50px;
+    font-weight: 700;
+    background: linear-gradient(264deg, #DA7C25 -5.09%, #B923E1 106.28%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .about-achievement p {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .about-skill:hover {
+    transform: scale(1.05);
+  }
+  
+  .about-achievement:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .about {
+      margin: 40px 50px;
+      gap: 40px;
+    }
+  
+    .about-title h1 {
+      font-size: 50px;
+    }
+  
+    .about-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-para {
+      text-align: center;
+    }
+  
+    .about-achievements {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-title h1 {
+      font-size: 40px;
+    }
+  
+    .about-left img {
+      width: 250px;
+      height: 250px;
+    }
+  
+    .about-para {
+      font-size: 18px;
+    }
+  
+    .about-achievement h1 {
+      font-size: 36px;
+    }
+  }
+  
+  .about-skill {
+    position: relative;
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #b923e1;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+  }

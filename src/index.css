@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  background: #161513;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/open_sans/open-sans-v18-latin-regular.woff') format('woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/open_sans/OpenSans-Bold.woff') format('woff');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/open_sans/open-sans-v18-latin-800.woff') format('woff');
+  font-weight: 800;
+}
